@@ -1,0 +1,19 @@
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #cacdcda3;
+  color: rgb(1, 1, 1);
+  max-width: auto;
+  max-height: auto;
+  margin: 20px auto;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+class__header1 {
+  margin: 20px;
+}
