@@ -5,7 +5,7 @@
       done: false,
     },
     {
-      content: "zjesć pierogi",
+      content: "Zjesć pierogi",
       done: true,
     },
   ];
@@ -15,7 +15,7 @@
 
     for (const task of tasks) {
       htmlString += `
-          <li${tasks.done ? ' style="text-decoration: line through"' : ""}>
+          <li${task.done ? ' style="text-decoration: line-through"' : ""}>
             ${task.content}
           </li>        
         `;
