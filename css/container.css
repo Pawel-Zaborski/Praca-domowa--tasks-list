@@ -1,0 +1,31 @@
+.container {
+  display: grid;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-gap: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  vertical-align: middle;
+}
+
+.container__1 {
+  display: grid;
+  background-color: rgb(254, 254, 254);
+  padding: 20px;
+}
+
+.container__addTask {
+  display: grid;
+  background-color: rgb(254, 254, 254);
+  padding: 20px;
+  align-content: center;
+  height: 60px;
+}
+
+.container__tasks {
+  display: grid;
+  background-color: rgb(254, 254, 254);
+  padding: 20px;
+  align-content: center;
+  height: auto;
+}
