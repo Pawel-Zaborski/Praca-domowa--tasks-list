@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-rows: 100px 100px 100px 100px;
+  grid-template-rows: 60px 60px 60px auto;
   grid-gap: 1px;
   margin-left: auto;
   margin-right: auto;
@@ -8,10 +8,17 @@
   vertical-align: middle;
 }
 
+.container__header {
+  display: grid;
+  background-color: none;
+  align-content: center;
+}
+
 .container__1 {
   display: grid;
   background-color: rgb(254, 254, 254);
   padding: 20px;
+  align-content: center;
 }
 
 .container__addTask {
@@ -19,7 +26,6 @@
   background-color: rgb(254, 254, 254);
   padding: 20px;
   align-content: center;
-  height: 60px;
 }
 
 .container__tasks {
@@ -27,5 +33,4 @@
   background-color: rgb(254, 254, 254);
   padding: 20px;
   align-content: center;
-  height: auto;
 }
