@@ -1,0 +1,23 @@
+.form__field {
+  border: 2px solid #ccc;
+  padding: 10px;
+  height: 30px;
+  width: 70%;
+  border-radius: 1px;
+}
+
+.form_button {
+  padding: 0px;
+  height: 30px;
+  width: 25%;
+  background-color: teal;
+  color: white;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 540;
+  padding-inline: 10px;
+  text-align: center;
+}
