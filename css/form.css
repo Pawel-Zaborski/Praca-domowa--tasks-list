@@ -2,14 +2,14 @@
   border: 2px solid #ccc;
   padding: 10px;
   height: 30px;
-  width: 70%;
+  width: 75%;
   border-radius: 1px;
 }
 
 .form_button {
   padding: 0px;
   height: 30px;
-  width: 25%;
+  width: 20%;
   background-color: teal;
   color: white;
   align-items: center;
@@ -20,4 +20,5 @@
   font-weight: 540;
   padding-inline: 10px;
   text-align: center;
+  min-width: 80px;
 }
