@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-rows: 60px 60px 60px auto;
+  grid-template-rows: 60px 60px 70px 60px auto;
   grid-gap: 1px;
   margin-left: auto;
   margin-right: auto;
@@ -26,6 +26,7 @@
   background-color: rgb(254, 254, 254);
   padding: 20px;
   align-content: center;
+  height: 60px;
 }
 
 .container__tasks {
