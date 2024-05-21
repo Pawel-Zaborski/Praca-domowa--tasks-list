@@ -54,7 +54,7 @@
           <li class="container__li"
             ${task.done ? ' style="text-decoration: line-through"' : ""}>
             <button class="js-done">
-            zrobione
+            <img src="/pics/tick2.png">
             </button>
 
             ${task.content}   
