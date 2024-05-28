@@ -3,7 +3,7 @@
   grid-template-rows: 60px 60px 70px 60px auto;
   grid-gap: 1px;
   margin: 0 auto;
-  width: 70%;
+  width: 60%;
   vertical-align: middle;
 }
 
@@ -29,17 +29,16 @@
 }
 
 .container__tasks {
-  display: grid;
+  display: flex;
   background-color: rgb(254, 254, 254);
   padding: 20px;
   align-content: center;
-  align-items: safe;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .container__li {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 5px;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: start;
 }
