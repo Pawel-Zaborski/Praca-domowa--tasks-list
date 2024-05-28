@@ -54,13 +54,13 @@
           <li class="container__li"
             ${task.done ? ' style="text-decoration: line-through"' : ""}>
             <button class="js-done">
-            <img src="/pics/tick2.png">
+            <img src="./pics/tick2.png">
             </button>
 
             ${task.content}   
 
             <button class="js-remove">
-            <img src="/pics/delete.png">
+            <img src="./pics/delete.png">
             </button>
           </li>        
         `;
