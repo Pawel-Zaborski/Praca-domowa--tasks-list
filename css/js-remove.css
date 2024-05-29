@@ -1,4 +1,7 @@
 .js-remove {
   cursor: pointer;
   margin-left: auto;
+  margin-left: auto;
+  border: none;
+  background-color: white;
 }

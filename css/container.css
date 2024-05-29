@@ -25,7 +25,7 @@
   background-color: rgb(254, 254, 254);
   padding: 20px;
   align-content: center;
-  height: 60px;
+  height: auto;
 }
 
 .container__tasks {
@@ -37,8 +37,9 @@
   justify-content: space-evenly;
 }
 
-.container__li {
+.container__list {
   display: flex;
   justify-content: space-around;
   align-content: start;
+  margin-right: 50px;
 }

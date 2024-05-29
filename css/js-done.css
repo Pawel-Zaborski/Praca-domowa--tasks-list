@@ -1,4 +1,6 @@
 .js-done {
   cursor: pointer;
-  margin-left: 0;
+  margin-left: 0px;
+  border: none;
+  background-color: white;
 }
