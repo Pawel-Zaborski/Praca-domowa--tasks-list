@@ -8,6 +8,15 @@
   height: auto;
 }
 
+@media (max-width: 1103px) {
+  .container {
+    width: 100%;
+    align: auto;
+    padding: 5%;
+    wrap: wrap;
+  }
+}
+
 .container__header {
   display: grid;
   background-color: none;
