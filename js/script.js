@@ -61,8 +61,9 @@
 
             <button class="js-remove">
             <img src="./pics/delete.png">
-            </button>
-          </li>        
+            </button>            
+          </li>     
+          <HR> 
         `;
     }
 
