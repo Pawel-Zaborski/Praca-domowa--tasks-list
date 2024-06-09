@@ -1,10 +1,11 @@
 .container {
   display: grid;
-  grid-template-rows: 60px 60px 70px 60px auto;
+  grid-template-rows: 60px 60px 7auto 60px auto;
   grid-gap: 1px;
   margin: 0 auto;
   width: 60%;
   vertical-align: middle;
+  height: auto;
 }
 
 .container__header {
@@ -18,13 +19,14 @@
   background-color: rgb(254, 254, 254);
   padding: 20px;
   align-content: center;
+  font-size: large;
+  font-weight: 700;
 }
 
 .container__addTask {
   display: grid;
   background-color: rgb(254, 254, 254);
   padding: 20px;
-  align-content: center;
   height: auto;
 }
 
@@ -41,5 +43,7 @@
   display: flex;
   justify-content: space-around;
   align-content: start;
+  align-self: center;
+  align-items: center;
   margin-right: 50px;
 }
