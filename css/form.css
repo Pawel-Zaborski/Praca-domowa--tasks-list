@@ -3,7 +3,6 @@
   padding: 10px;
   height: 30px;
   width: 70%;
-  border-radius: 1px;
 }
 
 .form_button {
@@ -22,4 +21,19 @@
   text-align: center;
   min-width: 80px;
   cursor: pointer;
+}
+
+@media (max-width: 1103px) {
+  .form__field {
+    width: 100%;
+    align: center;
+    margin: 0;
+    wrap: wrap;
+  }
+  .form_button {
+    width: 100%;
+    align: center;
+    margin: auto;
+    wrap: wrap;
+  }
 }
