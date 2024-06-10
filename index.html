@@ -19,7 +19,6 @@
     <link href="css/header.css" rel="stylesheet" />
     <link href="css/body.css" rel="stylesheet" />
     <link href="css/form.css" rel="stylesheet" />
-    <link href="css/ul.css" rel="stylesheet" />
     <link href="css/js-remove.css" rel="stylesheet" />
     <link href="css/js-done.css" rel="stylesheet" />
     <script src="js/script.js" defer></script>
@@ -36,7 +35,9 @@
             placeholder="Co jest do zrobienia?"
             autofocus
           />
-          <button class="form_button">Dodaj zadanie</button>
+          <button class="form_button" onclick="resetField()">
+            Dodaj zadanie
+          </button>
         </form>
       </div>
       <div class="container__1">Lista zadań</div>
