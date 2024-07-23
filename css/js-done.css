@@ -1,6 +1,22 @@
 .js-done {
-  cursor: pointer;
-  margin-left: 0px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 29px;
+  height: 29px;
   border: none;
-  background-color: white;
+  cursor: pointer;
+  background-color: hsl(120, 100%, 25%);
+  margin-right: 10px;
+  color: white;
+  transition: 1s;
+}
+
+.js-done::after {
+  content: "\2714"; /*tick*/
+  color: white;
+}
+
+.js-done:hover {
+  background-color: hsl(120, 100%, 35%);
 }

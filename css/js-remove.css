@@ -1,7 +1,20 @@
 .js-remove {
-  cursor: pointer;
-  margin-left: auto;
-  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 29px;
+  height: 29px;
   border: none;
-  background-color: white;
+  cursor: pointer;
+  background-color: hsl(0, 100%, 50%);
+  color: white;
+  transition: 1s;
+}
+
+.js-remove::after {
+  content: "\1F5D1"; /*kosz na śmieci*/
+  color: white !important;
+}
+.js-remove:hover {
+  background-color: hsl(0, 100%, 70%);
 }
