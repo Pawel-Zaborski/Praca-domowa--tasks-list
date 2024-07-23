@@ -64,14 +64,16 @@
     for (const task of tasks) {
       if (showCompleted || !task.done) {
         htmlString += `
-          <li class="container__list" style="text-decoration: ${
-            task.done ? "line-through" : "none"
-          }">
-            <button class="js-done"></button>
-            ${task.content}
-            <button class="js-remove"></button>
-          </li>
-          <hr>
+         <li class="container__list">
+                    <button class="js-done"></button>
+                    <span style="text-decoration: ${
+                      task.done ? "line-through" : "none"
+                    }">
+                        ${task.content}
+                    </span>
+                    <button class="js-remove"></button>
+                </li>
+                <hr>
         `;
       }
     }
