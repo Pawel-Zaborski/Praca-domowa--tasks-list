@@ -47,15 +47,19 @@
     });
 
     const markAllDoneButton = document.querySelector(".js-markAllDone");
-    markAllDoneButton.addEventListener("click", () => {
-      markAllTasksDone();
-      markAllDoneButton.disabled = true; // Wyłącza przycisk po naciśnięciu
-    });
+    if (markAllDoneButton) {
+      markAllDoneButton.addEventListener("click", () => {
+        markAllTasksDone();
+        markAllDoneButton.disabled = true; // Wyłącza przycisk po naciśnięciu
+      });
+    }
 
     const toggleShowCompletedButton = document.querySelector(
       ".js-toggleShowCompleted"
     );
-    toggleShowCompletedButton.addEventListener("click", toggleShowCompleted);
+    if (toggleShowCompletedButton) {
+      toggleShowCompletedButton.addEventListener("click", toggleShowCompleted);
+    }
   };
 
   const render = () => {
@@ -64,28 +68,33 @@
     for (const task of tasks) {
       if (showCompleted || !task.done) {
         htmlString += `
-         <li class="container__list">
-                    <button class="js-done"></button>
-                    <span style="text-decoration: ${
-                      task.done ? "line-through" : "none"
-                    }">
-                        ${task.content}
-                    </span>
-                    <button class="js-remove"></button>
-                </li>
-                <hr>
-        `;
+       <li class="container__list">
+                  <button class="js-done ${task.done ? "done" : ""}"></button>
+                  <span style="text-decoration: ${
+                    task.done ? "line-through" : "none"
+                  }">
+                      ${task.content}
+                  </span>
+                  <button class="js-remove"></button>
+              </li>
+              <hr>
+      `;
       }
     }
 
-    document.querySelector(".js-tasks").innerHTML = htmlString;
+    const tasksElement = document.querySelector(".js-tasks");
+    if (tasksElement) {
+      tasksElement.innerHTML = htmlString;
+    }
 
     const toggleShowCompletedButton = document.querySelector(
       ".js-toggleShowCompleted"
     );
-    toggleShowCompletedButton.textContent = showCompleted
-      ? "Ukryj ukończone"
-      : "Pokaż ukończone";
+    if (toggleShowCompletedButton) {
+      toggleShowCompletedButton.textContent = showCompleted
+        ? "Ukryj ukończone"
+        : "Pokaż ukończone";
+    }
 
     bindEvents();
   };
@@ -106,8 +115,10 @@
   const init = () => {
     render();
 
-    const form = document.querySelector(".js-form");
-    form.addEventListener("submit", onFormSubmit);
+    const form = document.querySelector(".js-form form");
+    if (form) {
+      form.addEventListener("submit", onFormSubmit);
+    }
   };
 
   init();
