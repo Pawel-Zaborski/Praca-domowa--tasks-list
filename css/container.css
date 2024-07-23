@@ -21,7 +21,8 @@
   display: grid;
   grid-template-columns: 1fr auto auto;
   background-color: rgb(254, 254, 254);
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 25px;
   align-items: center;
   gap: 20px;
   height: 50px auto;
@@ -35,19 +36,18 @@
 }
 
 .container__tasks {
-  display: flex;
+  display: grid;
+  grid-template-columns: 95%;
   background-color: rgb(254, 254, 254);
   padding: 20px;
-  align-content: center;
-  flex-direction: column;
-  justify-content: space-evenly;
 }
 
 .container__list {
-  display: flex;
-  justify-content: space-around;
-  align-content: start;
-  align-self: center;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  justify-content: center;
   align-items: center;
-  margin-right: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
