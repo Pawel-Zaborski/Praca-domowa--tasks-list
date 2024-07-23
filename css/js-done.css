@@ -12,7 +12,7 @@
   transition: 1s;
 }
 
-.js-done::after {
+.js-done.done::after {
   content: "\2714"; /*tick*/
   color: white;
 }
