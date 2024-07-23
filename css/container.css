@@ -17,26 +17,21 @@
   }
 }
 
-.container__header {
+.container__titles {
   display: grid;
-  background-color: none;
-  align-content: center;
-}
-
-.container__1 {
-  display: grid;
+  grid-template-columns: 1fr auto auto;
   background-color: rgb(254, 254, 254);
   padding: 20px;
-  align-content: center;
-  font-size: large;
-  font-weight: 700;
+  align-items: center;
+  gap: 20px;
+  height: 50px auto;
 }
 
 .container__addTask {
-  display: grid;
   background-color: rgb(254, 254, 254);
   padding: 20px;
   height: auto;
+  margin-bottom: 10px;
 }
 
 .container__tasks {
