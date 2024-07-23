@@ -3,7 +3,7 @@ form.js-form button {
   display: grid;
   grid-template-columns: auto auto;
   align-items: flex-end;
-  gap: 10px;
+  gap: 30px;
   padding: 10px;
   margin: 0 10px;
   border: 1px solid #ccc;
